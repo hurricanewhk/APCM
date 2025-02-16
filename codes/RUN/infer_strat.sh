@@ -1,0 +1,22 @@
+CUDA_VISIBLE_DEVICES=2 python infer.py \
+    --config_name gated_encoder_model   \
+    --inputter_name strat \
+    --add_nlg_eval \
+    --seed 0 \
+    --load_checkpoint ./DATA/strat.gated_encoder_model_persona_attention_final_rebuttal/2024-12-19105142.1.5e-05.4.1gpu/epoch-6.bin \
+    --fp16 false \
+    --max_input_length 512 \
+    --max_decoder_input_length 15 \
+    --max_length 50 \
+    --min_length 10 \
+    --infer_batch_size 128 \
+    --infer_input_file my_test.txt \
+    --temperature 0.5 \
+    --top_k 10 \
+    --top_p 0.9 \
+    --num_beams 1 \
+    --repetition_penalty 1.03 \
+    --no_repeat_ngram_size 0 \
+    --use_all_persona False \
+    --encode_context True
+# infer_batch_size 128 my_test.txt /data/wanghongkai/ds/PAL-main/codes/test.txt

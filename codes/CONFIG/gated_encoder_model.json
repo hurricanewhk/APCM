@@ -1,0 +1,21 @@
+{
+  "model_name": "gated_encoder_blenderbot_small",
+  "pretrained_model_path": "/data/wanghongkai/ds/PAL-main/codes/Blenderbot_small-90M",
+  "custom_config_path": null,
+  "gradient_checkpointing": false,
+
+  "expanded_vocab": [
+    "</s>",
+    "<s>",
+    "<persona>",
+    "<input>",
+    "[Question]",
+    "[Restatement or Paraphrasing]",
+    "[Reflection of feelings]",
+    "[Self-disclosure]",
+    "[Affirmation and Reassurance]",
+    "[Providing Suggestions]",
+    "[Information]",
+    "[Others]"
+  ]
+}
