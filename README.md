@@ -1,4 +1,5 @@
 ## Adaptive Persona Context Modulation for Emotional Support Conversation
+![APCM](https://www.overleaf.com/project/6774f8ab2ab3cc001de44fe7)
 ### Abstract
 
 Personalized Emotion Support Conversation (ESC) systems assist users (i.e.seekers) in navigating negative emotional states through personalized, empathetic interactions. While existing systems attempt to infer persona from dialogue to understand seekers, they often struggle to distinguish supporter's and seeker's roles and utilize seeker's persona appropriately. We present a novel **A**daptive **P**ersona **C**ontext **M**odulation approach, APCM, that dynamically adjusts a weight balance between persona and context in different scenarios. APCM addresses two key challenges in emotional support conversations. First, it more comprehensively captures the seeker's persona from the dialogue history while avoiding role confusion. Second, it introduces an adaptive modulation module that dynamically balances the influence of persona and context information during response generation, better reflecting real-world conversation patterns where persona relevance varies across utterances.
@@ -16,6 +17,7 @@ python codes/_reformat/process.py --add_persona True
 You should first download the [BlenderBot-small](https://huggingface.co/facebook/blenderbot_small-90M) model and put the pytorch_model.bin file in Blenderbot_small-90M.
 
 Then run ```RUN/prepare_strat.sh```
+
 And run ```RUN/train_strat.sh```
 
 ### Model inference
